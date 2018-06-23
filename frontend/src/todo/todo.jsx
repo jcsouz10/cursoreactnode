@@ -42,6 +42,8 @@ export default class Todo extends Component {
         const description = this.state.description;
         axios.post(URL, {description})
         .then(resp=>this.refresh())
+
+        alert('oi')
     }
 
     handleRemove(todo){
